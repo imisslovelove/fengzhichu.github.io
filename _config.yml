@@ -2,9 +2,9 @@ url: https://fengzhichu.github.io
 baseurl: 
 
 # Site settings
-title: Awesome Title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: 枫之楚
+email: contact@fengzhichu.com
+description: "Hi, 我是枫之楚，欢迎来到我的个人博客，我会在这里分享知识、灵感以及生活的点滴。作为一名二把刀的iOS开发者，目前还在修炼中。对平面设计、手绘、UI动效非常迷恋。我的目标是能够实现设计师的任何酷炫动效。"
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -58,7 +58,7 @@ social:
   - title: bitbucket 
     url: http://bitbucket.org/jekyll
   - title: github
-    url: http://github.com/jekyll
+    url: http://github.com/fengzhichu
 
 # Postal address (add as many lines as necessary)
 address:
