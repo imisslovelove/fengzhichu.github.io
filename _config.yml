@@ -1,70 +1,27 @@
-url: https://fengzhichu.github.io
-baseurl: 
-
-# Site settings
 title: 枫之楚
-email: contact@fengzhichu.com
-description: "Hi, 我是枫之楚，欢迎来到我的个人博客，我会在这里分享知识、灵感以及生活的点滴。作为一名二把刀的iOS开发者，目前还在修炼中。对平面设计、手绘、UI动效非常迷恋。我的目标是能够实现设计师的任何酷炫动效。"
+description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: fed136
-  secondary: fec503  
-  secondary-dark: 333
+url: https://fengzhichu.github.io
+baseurl:
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
 
-# Team names, titles and social links
-people:
-- name: Kay Garland
-  pic: 1
-  position: Lead Designer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
+markdown: redcarpet
+highlighter: pygments
+paginate: 6
 
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
+navigation:
+ - title: 主页
+   url: /index.html
+ - title: 关于
+   url: /about.html
+ - title: 联系
+   url: /contact.html
 
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/fengzhichu
+   github: fengzhichu
+   twitter: fengzhichu
+   facebook: fengzhichu
+   email: fengzhichu@live.com
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
-
-# Build settings
-markdown: kramdown
-permalink: pretty
+google_analytics: "UA-58263416-1"

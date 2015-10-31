@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
-  {% include head.html %}
+{% include head.html %}
 
+<body>
 
-    <body id="page-top" class="index">
+   {% include header.html %}
 
-    {% include header.html %}
-    {% include services.html %}
-    {% include portfolio_grid.html %}
-    {% include about.html %}
-    {% include team.html %}
-    {% include clients.html %}
-    {% include contact.html %}
-    {% include footer.html %}
-    {% include modals.html %}
-    {% include js.html %}
+   <div class="content">
+      <div class="container">
+         {{ content }}
+      </div>
+   </div><!-- end .content -->
 
-    </body>
+   {% include footer.html %}
+   {% include scripts.html %}
+
+</body>
+
 </html>
