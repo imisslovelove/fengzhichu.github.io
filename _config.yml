@@ -1,5 +1,5 @@
 title: 枫之楚
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+description: "Hi, 我是枫之楚，欢迎来到我的个人博客，我会在这里分享知识、灵感以及生活的点滴。作为一名二把刀的iOS开发者，目前还在修炼中。对平面设计、手绘、UI动效非常迷恋。"
 
 url: https://fengzhichu.github.io
 baseurl:
@@ -11,17 +11,21 @@ highlighter: pygments
 paginate: 6
 
 navigation:
- - title: 主页
+ - title: 主页|HOME
    url: /index.html
- - title: 关于
+ - title: 类目|CATEGORY
+   url: /categories.html
+ - title: 标记|TAG
+   url: /tags.html
+ - title: 关于|ABOUT
    url: /about.html
- - title: 联系
+ - title: 联系|CONTACT
    url: /contact.html
 
 social:
    github: fengzhichu
    twitter: fengzhichu
-   facebook: fengzhichu
+   facebook: 
    email: fengzhichu@live.com
 
 google_analytics: "UA-58263416-1"
