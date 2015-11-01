@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Me
+title: 关于|About
 ---
 
 <div class="post">
