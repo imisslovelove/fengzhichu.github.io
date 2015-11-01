@@ -15,7 +15,7 @@ navigation:
    url: /index.html
  - title: 类目|CATEGORY
    url: /categories.html
- - title: 标记|TAG
+ - title: 标签|TAGS
    url: /tags.html
  - title: 关于|ABOUT
    url: /about.html
