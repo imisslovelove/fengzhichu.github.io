@@ -11,15 +11,15 @@ highlighter: pygments
 paginate: 6
 
 navigation:
- - title: 主页|HOME
+ - title: 主页 | HOME
    url: /index.html
- - title: 类目|CATEGORY
+ - title: 类目 | CATEGORY
    url: /categories.html
- - title: 标签|TAGS
+ - title: 标签 | TAGS
    url: /tags.html
- - title: 关于|ABOUT
+ - title: 关于 | ABOUT
    url: /about.html
- - title: 联系|CONTACT
+ - title: 联系 | CONTACT
    url: /contact.html
 
 social:
