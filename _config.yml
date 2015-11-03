@@ -14,7 +14,7 @@ paginate: 6
 navigation:
  - title: 主页 | HOME
    url: /index.html
- - title: 类目 | CATEGORY
+ - title: 类目 | CATEGORIES
    url: /categories.html
  - title: 标签 | TAGS
    url: /tags.html

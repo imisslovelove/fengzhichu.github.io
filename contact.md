@@ -4,11 +4,11 @@ title: 联系 | Contact
 ---
 
 <div id="contact">
-  <h1 class="pageTitle">Contact Me</h1>
+  <h1 class="pageTitle"><font color="2E8B57">Contact Me</font></h1>
   <div class="contactContent">
-    <p class="intro">如果你想和我交流iOS开发或者想探讨其他问题，请发邮件给我。</p>
+    <p class="intro"><b>如果你想和我交流iOS开发或者想探讨其他问题，请发邮件给我。</b></p>
     <p>当然，你也可以关注我的<a href="http://weibo.com/fengzhichu">微博 (@-枫之楚-)</a>，发私信给我。</p>
-    <p>注意：标题请以「博客」开头。<br />例如：<b>「博客」我是邮件标题</b></p>
+    <p>注意：标题请以「博客」开头。<br />例如：<b><font color=#"2E8B57">「博客」我是邮件标题</font></b></p>
   </div>
   <!-- Check user input value. -->
   <script>
