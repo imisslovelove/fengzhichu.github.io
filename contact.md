@@ -10,7 +10,6 @@ title: 联系 | Contact
     <p>当然，你也可以关注我的<a href="http://weibo.com/fengzhichu">微博 (@-枫之楚-)</a>，发私信给我。</p>
     <p>注意：标题请以「博客」开头。<br />例如：<b>「博客」我是邮件标题</b></p>
   </div>
-
   <!-- Check user input value. -->
   <script>
     function validateMsg(name, email, message) {
@@ -25,7 +24,7 @@ title: 联系 | Contact
     }
   </script>
   
-  <form action="http://formspree.io/fengzhichu@foxmail.com" method="POST">
+  <form action="http://formspree.io/contact@fengzhichu.com" method="POST">
     <!--<label for="name">名字 :</label>    -->
     <input type="text" id="name" name="name" placeholder="名字 | NAME" class="full-width"><br>
     <!--<label for="email">你的邮箱地址 :</label>-->
@@ -36,4 +35,5 @@ title: 联系 | Contact
     <input type="text" name="_gotcha" style="display:none" />
     <!--<input type="hidden" name="_subject" value="New submission!" />-->
   </form>
+
 </div>

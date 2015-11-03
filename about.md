@@ -6,11 +6,11 @@ title: 关于 | About
 <div class="post">
 	<h1 class="pageTitle">About Me</h1>
 	<img src="{{ '/assets/img/touring.jpg' | prepend: site.baseurl }}" alt=""> 
-	<p class="intro">Hi~，我是<a href="http://fengzhichu.com">枫之楚</a> (@fengzhichu) ，真名胡军。欢迎来到我的个人博客，这里是我分享知识、灵感以及生活点滴的地方。</p>
-	<p>我是一名“三把刀”的iOS开发者，目前还在前往“二把刀”的路上，对平面设计、手绘、UI动效非常迷恋。有时间就会去逛一下 <a href="https://dribbble.com/">Dribbble</a> 和 <a href="http://www.zcool.com.cn/">站酷</a>，欣赏各种设计大神的神级作品，非常想学手绘，可惜没有时间(NO, shi yin wei wo tai lan.)。喜欢看战争类、科幻类、轻文艺类电影，也喜欢听周华健、李宗盛、罗大佑、张学友、张震岳、陈奕迅、王若琳、姚贝娜、曲婉婷、杨坤、朴树、老狼、黄渤的歌(Hao chang yi chuan ming zi.)，偶尔看看小说。用一个字来总结就是：ZHAI 。</p>
+	<p class="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你好，我是胡军，欢迎来到我的个人博客，这里是我记录知识和灵感的地方。<a href="https://fengzhichu.com">枫之楚</a> (@fengzhichu) 是我常用的网络ID，当然也不是所有的「枫之楚」都是我。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我是一名“三把刀”的iOS开发者，目前还在前往“二把刀”的路上，对平面设计、手绘、UI动效非常迷恋。有时间就会去逛一下 <a href="https://dribbble.com/">Dribbble</a> 和 <a href="http://www.zcool.com.cn/">站酷</a>，欣赏各种设计大神的神级作品，非常想学手绘，可惜没有时间(NO, shi yin wei wo tai lan.)。喜欢看战争类、科幻类、轻文艺类电影，也喜欢听周华健、李宗盛、罗大佑、张学友、张震岳、陈奕迅、王若琳、姚贝娜、曲婉婷、杨坤、朴树、老狼、黄渤的歌(Hao chang yi chuan ming zi.)，偶尔看看小说。用一个字来总结就是：ZHAI 。</p>
 	<h2>关键词|KEY WORDS</h2>
 	<ul>
-		<li>M.E. : 一枚研究僧；</li>
+		<li>MEng. : 一枚研究僧；</li>
   	<li>iOS Develop with <a href="https://en.wikipedia.org/wiki/Objective-C">Objective-C</a> : 还处于入门级水平；</li>
   	<li>iOS Develop with <a href="https://en.wikipedia.org/wiki/Swift">Swift</a> : 正在努力学习中；</li>
   	<li>Data Structures and Algorithms : 基础阶段；</li>
