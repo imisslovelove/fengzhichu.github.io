@@ -8,7 +8,13 @@ title: 首页 | 枫之楚的博客
   <ul class="posts noList">
     {% for post in paginator.posts %}
       <li>
-        <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+        <span class="date">{{ post.date | date: '%B %d, %Y' }} 
+          <body>
+            <a>&nbsp;</a>
+            <a href="{{ page.url | prepend: site.baseurl | prepend: site.url }}#disqus_thread">0 Comments</a>
+            <script id="dsq-count-scr" src="//fenzhichu.disqus.com/count.js" async></script>
+          </body>
+        </span>
         <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         <p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
       </li>
