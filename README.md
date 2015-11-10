@@ -1,49 +1,14 @@
-![preview Long Haul](/preview.jpg)
+# Type Theme
 
-Long Haul is a minimal jekyll theme built with COMPASS / SASS / SUSY and focuses on long form blog plosts. It is meant to used as a starting point for a jekyll blog/website.
+![Default Type Theme blog](https://cloud.githubusercontent.com/assets/816965/5142407/19742e48-71d6-11e4-8d9d-fdfe010784f0.png)
 
-If you really enjoy Long Haul and want to give me credit somewhere on the send or tweet out your experience with Long Haul and tag me [@brianmaierjr](https://twitter.com/brianmaier).
+A free and open-source [Jekyll](http://jekyllrb.com) theme. Great for blogs and easy to customize.
 
-####[View Demo](http://brianmaierjr.com/long-haul)
+## Get Started
 
-## Features
+[Demo](https://rohanchandra.github.io/type-theme/)
 
-- Minimal, Type Focused Design
-- Built with SASS + COMPASS
-- Layout with SUSY Grid
-- SVG Social Icons
-- Responsive Nav Menu
-- XML Feed for RSS Readers
-- Contact Form via Formspree
-- 5 Post Loop with excerpt on Home Page
-- Previous / Next Post Navigation
-- Estimated Reading Time for posts
-- Stylish Drop Cap on posts
-- A Better Type Scale for all devices
-
-## Setup
-
-1. [Install Jekyll](http://jekyllrb.com)
-2. Fork the [Long Haul repo](http://github.com/brianmaierjr/long-haul)
-3. Clone it
-4. Install susy `gem install susy` 
-5. Install normalize `gem install normalize-scss`
-6. Run Jekyll `jekyll serve -w`
-7. Run `compass watch`
-8. Customize!
-
-## Site Settings
-
-The main settings can be found inside the `_config.yml` file:
-
-- **title:** title of your site
-- **description:** description of your site
-- **url:** your url
-- **paginate:** the amount of posts displayed on homepage
-- **navigation:** these are the links in the main site navigation
-- **social** diverse social media usernames (optional)
-- **google_analytics** Google Analytics key (optional)
+[Using Type](https://rohanchandra.github.io/project/type/)
 
 ## License
-
-This is [MIT](LICENSE) with no added caveats, so feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
+The MIT License (MIT)

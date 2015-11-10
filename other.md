@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: 其他
+permalink: /other/
 feature-img: "img/sample_feature_img_2.png"
 ---
 

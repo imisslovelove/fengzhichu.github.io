@@ -1,32 +1,69 @@
 ---
 layout: default
-title: 首页 | 枫之楚的博客
 ---
 
-<div class="home" id="home">
-  <h1 class="pageTitle"><font color="2E8B57">HOME</font></h1>
-  <ul class="posts noList">
-    {% for post in paginator.posts %}
-      <li>
-        <span class="date">{{ post.date | date: '%B %d, %Y' }} 
-          <body>
-            <a>&nbsp;</a>
-            <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}#disqus_thread">0 Comments</a>
-            <script id="dsq-count-scr" src="//fenzhichu.disqus.com/count.js" async></script>
-          </body>
-        </span>
-        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
-      </li>
-    {% endfor %}
-  </ul>
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button__outline">Newer Posts</a> 
-    {% endif %}
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button__outline">Older Posts</a>
-    {% endif %}
+<div class="home">
+  {% if site.theme.header_text %}
+  <div class="call-out" 
+  style="background-image: url('{{ site.baseurl }}/{{ site.theme.header_text_feature_image }}')">
+    {{ site.theme.header_text }}
   </div>
+  {% endif %}
+
+	<div class="posts">
+		{% for post in paginator.posts %}
+		<div class="post-teaser">
+		  <header>
+		    <h1>
+		      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+		        {{ post.title }}
+		      </a>
+		    </h1>
+		    <p class="meta">
+		      {{ post.date | date: "%Y年 %m月 %-d日" }}
+		    </p>
+		  </header>
+		  <div class="excerpt">
+		  {% assign num = post.content | number_of_words %}
+		  {% if  num  < site.theme.visiblewords %}
+		    {{ post.content }}
+		  {% else %}
+		    {{ post.content | truncatewords: 400 }}
+		    <p>
+		    <a class="text" href="{{ post.url | prepend: site.baseurl }}">
+		      {{ site.theme.str_continue_reading }}
+		    </a>
+		    </p>
+		  {% endif %}
+		  </div>
+		</div>
+		{% endfor %}
+	</div>
+
+	<div class="wp-pagenavi">
+	    <span class='pages'>第 {{ paginator.page }} 页，共 {{ paginator.total_pages }} 页</span>
+
+	    {% if paginator.previous_page %}
+	    	<a class="previouspostslink" rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" > « </a>
+	    {% endif %}
+
+	      {% if paginator.page == 1 %}
+	        <span class="current">1</span>
+	      {% else %}
+	        <a class="page larger" href="/">1</a>
+	      {% endif %}
+	   
+	    {% for count in (2..paginator.total_pages) %}
+	        {% if count == paginator.page %}
+	          <span class="current">{{ count }}</span>
+	        {% else %}
+	          <a class="page larger" href="blog/page{{ count }}">{{ count }}</a>
+	        {% endif %}
+	    {% endfor %}
+
+	    {% if paginator.next_page %}
+	    	<a class="nextpostslink" rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" > » </a>
+	    {% endif %}
+
+	</div>
 </div>
