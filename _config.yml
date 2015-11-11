@@ -8,9 +8,10 @@ theme:
   title: "枫之楚"
   #avatar: avatar.png
   hometitle: "首页"
+  yoursitetitle: FENGZHICHU
   gravatar: # Email MD5 hash
-  description: "枫之楚的自由地带！" # used by search engines
-  visiblewords: 1000
+  description: "一位Swifter的独白！" # used by search engines
+  visiblewords: 500
   # Header and footer text
   header_text: >
      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

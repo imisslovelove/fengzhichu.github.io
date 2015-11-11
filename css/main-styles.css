@@ -3,7 +3,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body { line-height: 1; }
 blockquote, q {	quotes: none; }
 blockquote:before, blockquote:after,q:before, q:after { content: ''; content: none; }
-blockquote { margin: 20px 0 30px; border-left: 5px solid; padding-left: 20px; }
+blockquote { margin: 20px 0 30px; border-left: 3px solid; padding-left: 20px; }
 :focus { outline: 0; }
 ins { text-decoration: none; }
 del { text-decoration: line-through; }
@@ -12,7 +12,7 @@ article, aside, footer, header, hgroup, nav, section { display: block; }
 
 /* Basic Styles */
 	/* Body */
-	body { font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; color: #666; background-color: #fff; line-height: 1.7em; font-weight: 500; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+	body { font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; color: #333; background-color: #fff; line-height: 1.7em; font-weight: 500; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 	body.et_non_fixed_nav.et_transparent_nav.et_boxed_layout #page-container,
 	body.et_fixed_nav.et_boxed_layout #page-container { padding-top: 54px; }
 	body.page-template-page-template-blank-php #page-container { padding-top: 0 !important; }
@@ -40,7 +40,7 @@ article, aside, footer, header, hgroup, nav, section { display: block; }
 
 	/* Headers */
 	h1, h2, h3, h4, h5, h6 { color: #333; padding-bottom: 10px; line-height: 1em; font-weight: 500; }
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; font-family: "Microsoft YaHei" !important;}
 	h1 { font-size: 30px; }
 	h2 { font-size: 26px; }
 	h3 { font-size: 22px; }
@@ -68,6 +68,11 @@ article, aside, footer, header, hgroup, nav, section { display: block; }
 
 	/* Word Break */
 	#et-secondary-menu li, #top-menu li { word-wrap: break-word; }
+
+.subtitlecontainer { text-decoration: none; color: #9B9B9B; font-weight: normal; font-family: "Microsoft YaHei" !important; padding-top: .5em; }
+.subtitle { color: #9B9B9B;}
+.subtitle:hover { text-decoration: none !important; color: #6B6B6B !important; }
+#subtitletrans a { transition: all 0.4s ease-in-out; }
 
 /* Accent Color */
 .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message { background: #1ABC9C; }
@@ -844,7 +849,9 @@ ul.et_pb_side_nav .side_nav_item a.active { background-color: #fff !important; }
 		.et_primary_nav_dropdown_animation_expand #et-top-navigation ul li:hover > ul, .et_secondary_nav_dropdown_animation_expand #et-secondary-nav li:hover > ul { -webkit-transform-origin: 0 -0%; -webkit-animation: Grow .4s ease-in-out; -moz-animation: Grow .8s ease-in-out; -o-animation: Grow .4s ease-in-out; animation: Grow .4s ease-in-out; -webkit-backface-visibility: visible !important; backface-visibility: visible !important; }
 		.et_primary_nav_dropdown_animation_flip #et-top-navigation ul li ul li:hover > ul, .et_secondary_nav_dropdown_animation_flip #et-secondary-nav ul li:hover > ul { -webkit-animation: flipInX .6s ease-in-out; -moz-animation: flipInX .6s ease-in-out; -o-animation: flipInX .6s ease-in-out; animation: flipInX .6s ease-in-out; -webkit-backface-visibility: visible !important; backface-visibility: visible !important; }
 		.et_primary_nav_dropdown_animation_flip #et-top-navigation ul li:hover > ul, .et_secondary_nav_dropdown_animation_flip #et-secondary-nav li:hover > ul { -webkit-animation: flipInY .6s ease-in-out; -moz-animation: flipInY .6s ease-in-out; -o-animation: flipInY .6s ease-in-out; animation: flipInY .6s ease-in-out; -webkit-backface-visibility: visible !important; backface-visibility: visible !important; }
-
+	
+	#page-container { min-height:100vh !important; position:relative !important; }
+	
 	/* Vertical Navigation */
 	.et_vertical_nav #et-main-area, .et_vertical_nav #top-header { margin-left: 225px !important; position: relative; }
 	.et_vertical_nav #top-header { z-index: 9999; }
@@ -867,6 +874,7 @@ ul.et_pb_side_nav .side_nav_item a.active { background-color: #fff !important; }
 	.et_vertical_nav #main-header #top-menu > li > a:after { right: 20px; }
 	.et_vertical_nav.et_boxed_layout #page-container #main-header { left: auto; transition: none; -webkit-transition: none; -moz-transition: none; }
 	.et_vertical_nav.et_header_style_centered #main-header #top-menu-nav, .et_vertical_nav.et_header_style_split #main-header #top-menu-nav { width: 100%; }
+
 
 		/* Vertical Navigation Search Form */
 		.et_vertical_nav input.et-search-field { left: 0 !important; }

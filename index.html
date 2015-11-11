@@ -15,12 +15,13 @@ layout: default
 		<div class="post-teaser">
 		  <header>
 		    <h1>
-		      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+		      <a id="post-link-trans" class="post-link" href="{{ post.url | prepend: site.baseurl }}">
 		        {{ post.title }}
 		      </a>
 		    </h1>
-		    <p class="meta">
-		      {{ post.date | date: "%Y年 %m月 %-d日" }}
+		    <p id="subtitletrans" class="subtitlecontainer">
+		      <a class="subtitle">{{ post.date | date: "%Y年%m月%-d日" }}</a>
+		      {% if post.author %} | <a class="subtitle" href="{{ site.baseurl }}/about/">{{ post.author }}</a>{% endif %}
 		    </p>
 		  </header>
 		  <div class="excerpt">
