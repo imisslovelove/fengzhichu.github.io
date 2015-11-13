@@ -691,6 +691,8 @@ body.chrome.parallax-map-support .et_pb_map { transform: inherit !important; }
 .mobile_menu_bar:before { content: "\61"; font-size: 32px; left: 0; position: relative; top: 0; cursor: pointer; }
 .mobile_nav .select_page { display: none; }
 
+.et_mobile_menu { margin-top: 0 !important; }
+
 /* Slider Modules & Gallery Post Format */
 .et_pb_slide_video { position: absolute; top: 50%; bottom: auto; }
 .et_pb_slider { position: relative; overflow: hidden; }

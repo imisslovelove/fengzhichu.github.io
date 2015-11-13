@@ -229,6 +229,8 @@ body.admin-bar.et_fixed_nav.et_secondary_nav_enabled #main-header { top: 62px; }
 #top-header, #top-header .container, #top-header #et-info, #top-header .et-social-icon a { line-height: 1em; }
 #top-header .container { padding-top: .75em; }
 
+#archive { padding:0 0 0 30%; }
+
 	/* Transparent Nav */
 	.et_non_fixed_nav.et_transparent_nav.et_show_nav #page-container,
 	.et_fixed_nav.et_show_nav #page-container { padding-top: 54px; }
@@ -577,7 +579,7 @@ span.comment_date { color: #000; font-size: 14px; font-weight: 300; }
 .comment_area .comment-reply-link { position: absolute; top: 7px; right: 0; display: block; }
 .comment-reply-link:hover, .form-submit:hover { text-decoration: none; }
 .comment .children { margin-left: 100px; padding-left: 0 !important; }
-
+.children { margin-top:0 !important; }
 	/* Comment Form */
 	.comment #respond { margin: -30px 0 0; }
 	#respond { padding-top: 17px; }

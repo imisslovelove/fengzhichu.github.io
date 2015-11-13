@@ -9,6 +9,18 @@
   text-align: center;
   color: $header-desc-text-color;
 }
+
+.call-out-content {
+  @extend %padding-regular;
+  display: inline-block;
+  width: 100%;
+  background-size: cover;
+  font-size: 1.6em;
+  text-align: center;
+  color: $header-desc-text-color;
+  padding: 0 0;
+}
+
 .call-out-title {
   @extend %padding-regular;
   display: inline-block;

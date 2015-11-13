@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Example Post Formatting"
-date:   2014-12-15
+title:  "Example Post Formatting 2013"
+date:   2013-12-15
 author: 枫之楚
 category: ios
 tags: [jekyll, github]

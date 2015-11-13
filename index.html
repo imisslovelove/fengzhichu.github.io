@@ -1,17 +1,17 @@
 ---
 layout: default
 ---
-
 <div class="home">
-  {% if site.theme.header_text %}
-  <div class="call-out" 
-  style="background-image: url('{{ site.baseurl }}/{{ site.theme.header_text_feature_image }}')">
-    {{ site.theme.header_text }}
-  </div>
-  {% endif %}
+  <article class="feature-image" >
+  <div style="background-image: url('{{ site.baseurl }}/{{ site.theme.place_holder_image }}')"/>
+  <header style="background-image: url('{{ site.imageurl }}')">
+    <p class="call-out-content"> {{ site.theme.header_text }} </p>
+  </header>
+  </article>
 
 	<div class="posts">
-		{% for post in paginator.posts %}
+	{% for post in paginator.posts %}
+		{% include post_tags_category.html %}
 		<div class="post-teaser">
 		  <header>
 		    <h1>
@@ -22,6 +22,7 @@ layout: default
 		    <p id="subtitletrans" class="subtitlecontainer">
 		      <a class="subtitle">{{ post.date | date: "%Y年%m月%-d日" }}</a>
 		      {% if post.author %} | <a class="subtitle" href="{{ site.baseurl }}/about/">{{ post.author }}</a>{% endif %}
+		      {% if post.category and post.tags %} | <a class="subtitle">{{ category_content }}</a> <a class="subtitle">{{ tags_content }}</a>{% endif %}
 		    </p>
 		  </header>
 		  <div class="excerpt">
@@ -58,7 +59,7 @@ layout: default
 	        {% if count == paginator.page %}
 	          <span class="current">{{ count }}</span>
 	        {% else %}
-	          <a class="page larger" href="blog/page{{ count }}">{{ count }}</a>
+	          <a class="page larger" href="/blog/page{{ count }}">{{ count }}</a>
 	        {% endif %}
 	    {% endfor %}
 

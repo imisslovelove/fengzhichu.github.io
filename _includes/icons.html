@@ -6,14 +6,6 @@
 </li>
 {% endif %}
 
-{% if site.theme.email_address %}
-<li>
-	<a href="mailto:{{ site.theme.email_address }}" title="{{ site.theme.str_email }}">
-		<i class="fa fa-fw fa-envelope"></i>
-	</a>
-</li>
-{% endif %}
-
 {% if site.theme.behance %}
 <li>
 	<a href="https://www.behance.net/{{ site.theme.behance }}" title="{{ site.theme.str_follow_on }} Behance">
@@ -162,6 +154,14 @@
 <li>
 	<a href="https://www.youtube.com/user/{{ site.theme.youtube }}" title="{{ site.theme.str_follow_on }} YouTube">
 		<i class="fa fa-fw fa-youtube"></i>
+	</a>
+</li>
+{% endif %}
+
+{% if site.theme.email_address %}
+<li>
+	<a href="mailto:{{ site.theme.email_address }}" title="{{ site.theme.str_email }}">
+		<i class="fa fa-fw fa-envelope"></i>
 	</a>
 </li>
 {% endif %}

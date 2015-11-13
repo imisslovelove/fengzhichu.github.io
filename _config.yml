@@ -1,7 +1,7 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://fengzhichu.com" # the base hostname & protocol for your site
-
+imageurl: "https://source.unsplash.com/category/nature/2600x500" #"https://unsplash.it/2600/500?random"
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
@@ -14,16 +14,16 @@ theme:
   visiblewords: 500
   # Header and footer text
   header_text: >
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
   #   <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
   header_text_feature_image: img/sample_feature_img.png
+  place_holder_image: img/sample_feature_img.png
   footer_text: >
    <a href="https://fengzhichu.com">枫之楚</a> 
 
   # Icons
-  rss: true
-  email_address: "contact@fengzhichu.com" # Full email address, e.g. "sam@example.com"
+  rss: false
   behance:
   bitbucket:
   dribbble:
@@ -43,6 +43,7 @@ theme:
   twitter: "fengzhichu"
   wordpress:
   youtube:
+  email_address: "contact@fengzhichu.com" # Full email address, e.g. "sam@example.com"
 
   # Scripts
   google_analytics: "UA-69523445-1" # Tracking ID, e.g. "UA-000000-01"
@@ -70,9 +71,25 @@ paginate: 5
 paginate_path: "blog/page:num"
 permalink: blog/:title/
 
+# Posted in ... with ...
+sechby: 
+  category:   #in
+  tag:   #with
+
 # BUILD SETTINGS
 markdown: redcarpet
 highlighter: pygments
 sass:
   sass_dir: _sass
   style: :compressed
+
+# ARCHIVES
+gems:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - month
+  layout: "archive"
+  permalinks:
+    month: "/archives/month/:year-:month/"
